@@ -5,6 +5,9 @@
   <title>Shopular</title>
 
   <link rel='stylesheet'href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+  <link href='style.css' rel='stylesheet'>
+  <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'>
+  <meta name='author' content='Jennifer Oakes'>
 </head>
 <body>
 
@@ -23,12 +26,12 @@
 
       <tbody>
         <tr ng-repeat='item in inventoryCtrl.inventory'>
-          <td>{{item.name}}</td>
+          <td class='name'>{{item.name}}</td>
           <td>{{inventoryCtrl.getNewPrice(item) | currency:"$" }}
-          <img ng-show='item.discount > 0 ' src='https://tiy-learn-content.s3.amazonaws.com/98350f05-sale_2.png'>
+          <img ng-show='item.discount > 0 ' src='img/saleicon.png'>
           </td>
           <td>{{item.quantity}}</td>
-          <td>{{item.color}}</td>
+          <td class='color'>{{item.color}}</td>
         </tr>
       </tbody>
     </table>
