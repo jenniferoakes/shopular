@@ -18,6 +18,13 @@ This repo is designed for practice using Angular 1 by building a little shop.
 - [ ] Be sure to have all the proper HTML...your page should have a <header>, <footer>, and <main> most likely... anything else?
 - [ ] Add zebra striped rows and centered in the page with 80% width.
 
+## Terminal Command Review:
+```sh
+  sass sass/main.scss style.css
+
+  sass --watch sass/main.scss:style.css
+```
+
 By: [Jennifer Oakes](https://www.linkedin.com/in/jennifernicoleoakes/)
 
 
