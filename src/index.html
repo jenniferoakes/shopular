@@ -53,31 +53,28 @@
 
     <h2>Inventory List</h2>
     <table class='table table-striped col-lg-8'>
-      <thead>
+        <tbody>
         <tr>
+          <thead>
+
           <th>
-            <a href="#" ng-click="sortType = 'name'; sortReverse = !sortReverse">
+            <a href="#" ng-click="inventoryCtrl.sortType = 'name'; sortReverse = !sortReverse">
             Name
-            <p ng-show="sortType == 'name' && !sortReverse" class="fa fa-caret-down"></p>
-            <p ng-show="sortType == 'name' && sortReverse" class="fa fa-caret-up"></p>
+          </a>
           </th>
           <th>
-            <a href="#" ng-click="sortType = 'price'; sortReverse = !sortReverse">
+            <a href="#" ng-click="inventoryCtrl.sortType = 'price'; sortReverse = !sortReverse">
             Price
-            <p ng-show="sortType == 'price' && !sortReverse" class="fa fa-caret-down"></p>
-            <p ng-show="sortType == 'price' && sortReverse" class="fa fa-caret-up"></p>
           </th>
           <th>
-            <a href="#" ng-click="sortType = 'quantity'; sortReverse = !sortReverse">
+            <a href="#" ng-click="inventoryCtrl.sortType = 'quantity'; sortReverse = !sortReverse">
             Quantity
-            <p ng-show="sortType == 'quantity' && !sortReverse" class="fa fa-caret-down"></p>
-            <p ng-show="sortType == 'quantity' && sortReverse" class="fa fa-caret-up"></p>
           </th>
           <th>Color</th>
-        </tr>
-      </thead>
 
-      <tbody>
+          </thead>
+        </tr>
+
         <tr ng-repeat='item in inventoryCtrl.inventory | orderBy:inventoryCtrl.sortType:sortReverse'>
           <td class='name'>{{item.name}}</td>
           <td>{{inventoryCtrl.getNewPrice(item) | currency:"$" }}

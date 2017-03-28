@@ -23,7 +23,7 @@ This repo is designed for practice using Angular 1 by building a little shop. Th
 - [X] Validate the data using angular, highlight any invalid fields in red.
 - [X] On form submission, add the item to the data (and hence UI) if all fields are valid.
 - [X] Allow default sorting by price (lowest at the top).
-- [ ] Allow a user to click on a table header and sort by: name, quantity, or price
+- [X] Allow a user to click on a table header and sort by: name, quantity, or price by using this [link](https://scotch.io/tutorials/sort-and-filter-a-table-using-angular)
 
 ## Terminal Command Review:
 ```sh
