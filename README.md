@@ -1,22 +1,29 @@
-#Shopular
+# Shopular
 
-This repo is designed for practice using Angular 1 by building a little shop.
+This repo is designed for practice using Angular 1 by building a little shop. The first round of tasks is focused on creating a table for inventory items. The second round of tasks is designed to practice two-way data binding. This assignment will focus on laying a basic understanding of how to bind form inputs to data on a controller's scope and then see any changes in the view. This assignment will also aid in the practice of using directives to initiate actions, and validate form data.
 
-##Tasks
-- [ ] Create an interface to edit the inventory.
-- [ ] Create all of the pieces of this application (HTML, Sass, JS).
+## First Round of Tasks
+- [X] Create an interface to edit the inventory.
+- [X] Create all of the pieces of this application (HTML, Sass, JS).
 - [X] Create one Angular module and controller.
 - [X] Bootstrap your module to the <html> tag.
 - [X] Bind your controller to an element in the HTML document.
 - [X] Make the controller have a tax property on its scope set to 5.75%.
 - [X] Display a table of the item data from the controller's scope.
 - [X] Place the data linked above in your controller.
-- [ ] Don't forget your table header.
-- [ ] Only display the name, price, quantity and color.
-- [ ] Make sure the price includes tax and any discount! (Discounts are in dollars, not percent.)
-- [ ] If the item has a discount, show this icon next to the price: discount icon
-- [ ] Be sure to have all the proper HTML...your page should have a <header>, <footer>, and <main> most likely... anything else?
-- [ ] Add zebra striped rows and centered in the page with 80% width.
+- [X] Only display the name, price, quantity and color.
+- [X] Make sure the price includes tax and any discount! (Discounts are in dollars, not percent.)
+- [X] If the item has a discount, show this icon next to the price: discount icon
+- [X] Add zebra striped rows and centered in the page with 80% width.
+
+## Second Round of Tasks
+- [ ] Create a form to add a new item.
+- [ ] The owner must provide the name, price, quantity, color, and discount.
+- [ ] Use Angular directives to bind the data to the controller (use a newItem object on the scope).
+- [ ] Validate the data using angular, highlight any invalid fields in red.
+- [ ] On form submission, add the item to the data (and hence UI) if all fields are valid.
+- [ ] Allow default sorting by price (lowest at the top).
+- [ ] Allow a user to click on a table header and sort by: name, quantity, or price
 
 ## Terminal Command Review:
 ```sh
@@ -26,6 +33,5 @@ This repo is designed for practice using Angular 1 by building a little shop.
 ```
 
 By: [Jennifer Oakes](https://www.linkedin.com/in/jennifernicoleoakes/)
-
 
 March 2017

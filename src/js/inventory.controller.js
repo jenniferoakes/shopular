@@ -23,7 +23,6 @@
       { "id": 683, "name": "pillow", "price": 27, "quantity": 10, "color": "black", "discount": 12 }
     ];
 
-
     /**
     * Calculates price of inventory item, taking into consideration discount and tax
     * @param {Object} item     One item in the inventory
