@@ -17,12 +17,12 @@ This repo is designed for practice using Angular 1 by building a little shop. Th
 - [X] Add zebra striped rows and centered in the page with 80% width.
 
 ## Second Round of Tasks
-- [ ] Create a form to add a new item.
-- [ ] The owner must provide the name, price, quantity, color, and discount.
-- [ ] Use Angular directives to bind the data to the controller (use a newItem object on the scope).
-- [ ] Validate the data using angular, highlight any invalid fields in red.
-- [ ] On form submission, add the item to the data (and hence UI) if all fields are valid.
-- [ ] Allow default sorting by price (lowest at the top).
+- [X] Create a form to add a new item.
+- [X] The owner must provide the name, price, quantity, color, and discount.
+- [X] Use Angular directives to bind the data to the controller (use a newItem object on the scope).
+- [X] Validate the data using angular, highlight any invalid fields in red.
+- [X] On form submission, add the item to the data (and hence UI) if all fields are valid.
+- [X] Allow default sorting by price (lowest at the top).
 - [ ] Allow a user to click on a table header and sort by: name, quantity, or price
 
 ## Terminal Command Review:

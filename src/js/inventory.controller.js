@@ -9,6 +9,8 @@
     let vm = this;
 
     vm.newItem = {};
+    vm.sortType = 'price'; // set the default sort type
+    vm.sortReverse = false; // set the default sort order
 
     vm.inventory = [
       { "id": 2957, "name": "widget", "price": 32, "quantity": 203, "color": "red", "discount": 31 },
