@@ -11,20 +11,47 @@
 </head>
 <body>
 
-  <h1>Shopular</h1>
+  <h1>Shopular Inventory</h1>
 
   <main ng-controller='InventoryController as inventoryCtrl'>
-    <form>
-
-
-
-
-
-
+    <form name='additem'
+          ng-submit='additem.$valid && inventoryCtrl.addItem(inventoryCtrl.newItem)'
+          novalidate>
+      <input
+        type='text'
+        placeholder='Name'
+        required
+        ng-model='inventoryCtrl.newItem.name'>
+      <input
+        type='number'
+        placeholder='Price'
+        min='0'
+        required
+        ng-model='inventoryCtrl.newItem.price'>
+      <input
+        type='number'
+        placeholder='Quantity'
+        min='0'
+        required
+        ng-model='inventoryCtrl.newItem.quantity'>
+      <input
+        type='text'
+        placeholder='Color'
+        required
+        ng-model='inventoryCtrl.newItem.color'>
+      <input
+        type='number'
+        placeholder='Discount'
+        min='0'
+        required
+        ng-model='inventoryCtrl.newItem.discount'>
+      <input
+        type='submit'
+        value='Add Item'>
     </form>
 
 
-
+    <h2>Inventory List</h2>
     <table class='table table-striped col-lg-8'>
       <thead>
         <tr>

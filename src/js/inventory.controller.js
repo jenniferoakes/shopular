@@ -8,6 +8,8 @@
 
     let vm = this;
 
+    vm.newItem = {};
+
     vm.inventory = [
       { "id": 2957, "name": "widget", "price": 32, "quantity": 203, "color": "red", "discount": 31 },
       { "id": 89274, "name": "golf club", "price": 98, "quantity": 10, "color": "black", "discount": 0 },
@@ -32,6 +34,31 @@
       let discountedPrice = item.price - item.discount;
       let finalPrice = discountedPrice * 1.0575;
       return finalPrice;
+    };
+
+    /**
+     * Adds new item to inventory table
+     * @param {Object} item   this should have a name, price, quantity, color, and discount
+     * @return {void}
+     */
+    vm.addItem = function addItem(item) {
+      if(typeof(item) !== 'object') {
+        return;
+      }
+
+      let id = Date.now();
+
+      vm.inventory.push({
+        id: id,
+        name: item.name,
+        price: item.price,
+        quantity: item.quantity,
+        color: item.color,
+        discount: item.discount
+      });
+
+      vm.newItem = {};
+
     };
 
   }

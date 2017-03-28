@@ -1,19 +1,15 @@
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
-html, body, header, main, footer, section, aside, h1, h2, h3, h4, p {
-  margin: 0;
-  padding: 0; }
-
-ul {
-  margin: 0; }
-
 .name {
   text-transform: capitalize; }
 
 .color {
   text-transform: capitalize; }
 
-table.table {
+.table {
   width: 80%;
-  text-align: center; }
+  margin: auto; }
+
+input.ng-invalid.ng-touched {
+  border: 1px solid red; }
 
 /*# sourceMappingURL=style.css.map */
