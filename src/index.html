@@ -60,15 +60,23 @@
           <th>
             <a href="#" ng-click="inventoryCtrl.sortType = 'name'; sortReverse = !sortReverse">
             Name
+              <p ng-show="sortType == 'name' && !sortReverse" class="fa fa-caret-down"></p>
+              <p ng-show="sortType == 'name' && sortReverse" class="fa fa-caret-up"></p>
           </a>
           </th>
           <th>
             <a href="#" ng-click="inventoryCtrl.sortType = 'price'; sortReverse = !sortReverse">
             Price
+              <p ng-show="sortType == 'price' && !sortReverse" class="fa fa-caret-down"></p>
+              <p ng-show="sortType == 'price' && sortReverse" class="fa fa-caret-up"></p>
+          </a>
           </th>
           <th>
             <a href="#" ng-click="inventoryCtrl.sortType = 'quantity'; sortReverse = !sortReverse">
             Quantity
+              <p ng-show="sortType == 'quantity' && !sortReverse" class="fa fa-caret-down"></p>
+              <p ng-show="sortType == 'quantity' && sortReverse" class="fa fa-caret-up"></p>
+          </a>
           </th>
           <th>Color</th>
 
