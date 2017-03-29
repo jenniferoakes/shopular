@@ -48,6 +48,15 @@
         return;
       }
 
+      if(typeof(item.name) !== 'string' || item.name.length < 1) {
+        return;
+      }
+
+      item.price = Number(item.price); //setting price to be a number since all data coming through a form is a string
+      if( Number.isNaN(item.price)) {
+        return;
+      }
+
       let id = Date.now();
 
       vm.inventory.push({
