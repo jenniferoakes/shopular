@@ -39,8 +39,8 @@
     };
 
     /**
-     * Adds new item to inventory table
-     * @param {Object} item   this should have a name, price, quantity, color, and discount
+     * Adds new item to inventory
+     * @param {Object} item   Needs a name, price, quantity, color, and discount
      * @return {void}
      */
     vm.addItem = function addItem(item) {
