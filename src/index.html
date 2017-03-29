@@ -17,6 +17,13 @@
     <form name='additem'
           ng-submit='additem.$valid && inventoryCtrl.addItem(inventoryCtrl.newItem)'
           novalidate>
+
+      <p ng-show='additem.name.$touched && !additem.name.$valid'>Please enter an item name.</p>
+      <p ng-show='additem.price.$touched && !additem.price.$valid'>Please enter an item price.</p>
+      <p ng-show='additem.quantity.$touched && !additem.quantity.$valid'>Please enter an item quantity.</p>
+      <p ng-show='additem.color.$touched && !additem.color.$valid'>Please enter an item color.</p>
+      <p ng-show='additem.discount.$touched && !additem.discount.$valid'>Please enter an item discount.</p>
+
       <input
         type='text'
         placeholder='Name'
@@ -50,43 +57,20 @@
         value='Add Item'>
     </form>
 
-
     <h2>Inventory List</h2>
     <table class='table table-striped col-lg-8'>
-        <tbody>
-        <tr>
-          <thead>
-
-          <th>
-            <a href="#" ng-click="inventoryCtrl.sortType = 'name'; sortReverse = !sortReverse">
-            Name
-              <p ng-show="sortType == 'name' && !sortReverse" class="fa fa-caret-down"></p>
-              <p ng-show="sortType == 'name' && sortReverse" class="fa fa-caret-up"></p>
-          </a>
-          </th>
-          <th>
-            <a href="#" ng-click="inventoryCtrl.sortType = 'price'; sortReverse = !sortReverse">
-            Price
-              <p ng-show="sortType == 'price' && !sortReverse" class="fa fa-caret-down"></p>
-              <p ng-show="sortType == 'price' && sortReverse" class="fa fa-caret-up"></p>
-          </a>
-          </th>
-          <th>
-            <a href="#" ng-click="inventoryCtrl.sortType = 'quantity'; sortReverse = !sortReverse">
-            Quantity
-              <p ng-show="sortType == 'quantity' && !sortReverse" class="fa fa-caret-down"></p>
-              <p ng-show="sortType == 'quantity' && sortReverse" class="fa fa-caret-up"></p>
-          </a>
-          </th>
+      <thead>
+          <th ng-click='inventoryCtrl.changeSort('name')'>Name</th>
+          <th ng-click='inventoryCtrl.changeSort('price')'>Price</th>
+          <th ng-click='inventoryCtrl.changeSort('quantity')'>Quantity</th>
           <th>Color</th>
+      </thead>
 
-          </thead>
-        </tr>
-
+      <tbody>
         <tr ng-repeat='item in inventoryCtrl.inventory | orderBy:inventoryCtrl.sortType:sortReverse'>
           <td class='name'>{{item.name}}</td>
           <td>{{inventoryCtrl.getNewPrice(item) | currency:"$" }}
-          <img ng-show='item.discount > 0 ' src='img/saleicon.png'>
+            <img ng-show='item.discount > 0 ' src='img/saleicon.png'>
           </td>
           <td>{{item.quantity}}</td>
           <td class='color'>{{item.color}}</td>
@@ -94,7 +78,6 @@
       </tbody>
     </table>
   </main>
-
 
   <footer>
     <p>Thanks for shopping by!</p>
