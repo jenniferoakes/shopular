@@ -39,7 +39,8 @@ The second round of tasks is designed to practice combining a lot of different p
 - [ ] Use the new service in the controller for your items (instead of our in-controller data from last time).
 - [ ] When the page is loaded and the Controller is created, get the data from the Service and put it on the scope.
 - [ ] Whenever an item is added, save the data using this new Service.
-- [ ] If you allow updating of items (EPIC Mode from last time), use the proper Service method for that. 
+- [ ] If you allow updating of items (EPIC Mode from last time), use the proper Service method for that.
+
 
 ## Terminal Command Review:
 ```sh
