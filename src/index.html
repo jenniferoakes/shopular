@@ -18,11 +18,11 @@
           ng-submit='additem.$valid && inventoryCtrl.addItem(inventoryCtrl.newItem)'
           novalidate>
 
-      <p ng-show='additem.name.$touched && !additem.name$valid'>Please enter an item name.</p>
-      <p ng-show='additem.price.$touched && !additem.price$valid'>Please enter an item price.</p>
-      <p ng-show='additem.quantity.$touched && !additem.quantity$valid'>Please enter an item quantity.</p>
-      <p ng-show='additem.color.$touched && !additem.color$valid'>Please enter an item color.</p>
-      <p ng-show='additem.discount.$touched && !additem.discount$valid'>Please enter an item discount.</p>
+      <p ng-show='additem.name.$touched && !additem.name.$valid'>Please enter an item name.</p>
+      <p ng-show='additem.price.$touched && !additem.price.$valid'>Please enter an item price.</p>
+      <p ng-show='additem.quantity.$touched && !additem.quantity.$valid'>Please enter an item quantity.</p>
+      <p ng-show='additem.color.$touched && !additem.color.$valid'>Please enter an item color.</p>
+      <p ng-show='additem.discount.$touched && !additem.discount.$valid'>Please enter an item discount.</p>
 
       <input
         type='text'
@@ -93,7 +93,7 @@
   <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js'></script>
   <script src='/js/inventory.module.js'></script>
   <script src='/js/inventory.controller.js'></script>
-  <script src='/js/inventory.service.js'></script> -->
+  <script src='/js/inventory.service.js'></script> 
 
 </body>
 </html>
