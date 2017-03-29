@@ -58,6 +58,8 @@
       }
 
       let id = Date.now();
+      //gives us the number of milliseconds from January 1st, 1970
+      //this 'fakes' a random number
 
       vm.inventory.push({
         id: id,
