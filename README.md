@@ -30,16 +30,15 @@ The second round of tasks is designed to practice combining a lot of different p
 - [X] Allow a user to click on a table header and sort by: name, quantity, or price by using this [reference link](https://scotch.io/tutorials/sort-and-filter-a-table-using-angular)
 
 ## Third Round of Tasks
-- [ ] Put the data to localStorage (for now).
-- [ ] Separate the logic for data persistence and UI interactions into Services and Controllers.
-- [ ] The owner plans to expand this system. For now he's the only user, but he'd like you to display his name and the login time at the top of the page.
-- [ ] Create a Service to handle saving the item data to localStorage.
-- [ ] This service only needs three methods: one to get all data, one to save a new item, and one to update all items.
-- [ ] Use the "factory" pattern.
-- [ ] Use the new service in the controller for your items (instead of our in-controller data from last time).
-- [ ] When the page is loaded and the Controller is created, get the data from the Service and put it on the scope.
-- [ ] Whenever an item is added, save the data using this new Service.
-- [ ] If you allow updating of items (EPIC Mode from last time), use the proper Service method for that.
+- [X] Put the data to localStorage (for now).
+- [X] Separate the logic for data persistence and UI interactions into Services and Controllers.
+- [X] The owner plans to expand this system. For now he's the only user, but he'd like you to display his name and the login time at the top of the page.
+- [X] Create a Service to handle saving the item data to localStorage.
+- [X] This service only needs three methods: one to get all data, one to save a new item, and one to update all items.
+- [X] Use the "factory" pattern.
+- [X] Use the new service in the controller for your items (instead of our in-controller data from last time).
+- [X] When the page is loaded and the Controller is created, get the data from the Service and put it on the scope.
+- [X] Whenever an item is added, save the data using this new Service.
 
 ## Terminal Command Review:
 ```sh
