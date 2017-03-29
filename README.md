@@ -41,7 +41,6 @@ The second round of tasks is designed to practice combining a lot of different p
 - [ ] Whenever an item is added, save the data using this new Service.
 - [ ] If you allow updating of items (EPIC Mode from last time), use the proper Service method for that.
 
-
 ## Terminal Command Review:
 ```sh
   sass sass/main.scss style.css
