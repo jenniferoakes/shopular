@@ -71,11 +71,10 @@
       });
       vm.newItem = {};
       //this clears the input fields after you submit a 'new item'
-
-      vm.changeSort = function changeSort(sortField) {
-        vm.sortType = sortField;
-        //something needs to go here
-      };
+    };
+    vm.changeSort = function changeSort(sortField) {
+      vm.sortType = sortField;
+      vm.sortReverse = !vm.sortReverse;
     };
   }
 })();
