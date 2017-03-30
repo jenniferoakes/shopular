@@ -15,7 +15,7 @@ module.exports = function gruntConfig(grunt) {
             'node_modules/angular-mocks/angular-mocks.js',
             'src/js/shop.module.js',
             'src/js/**/*.js', //this will not dupilcate the module file
-            'test/**/*.js'
+            'tests/**/*.js'
           ]
         }
       }
