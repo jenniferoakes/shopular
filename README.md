@@ -32,7 +32,7 @@ The second round of tasks is designed to practice combining a lot of different p
 ## Third Round of Tasks
 - [X] Put the data to localStorage (for now).
 - [X] Separate the logic for data persistence and UI interactions into Services and Controllers.
-- [X] The owner plans to expand this system. For now he's the only user, but he'd like you to display his name and the login time at the top of the page.
+- [ ] The owner plans to expand this system. For now he's the only user, but he'd like you to display his name and the login time at the top of the page.
 - [X] Create a Service to handle saving the item data to localStorage.
 - [X] This service only needs three methods: one to get all data, one to save a new item, and one to update all items.
 - [X] Use the "factory" pattern.
