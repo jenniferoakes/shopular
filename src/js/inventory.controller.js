@@ -1,8 +1,8 @@
 (function() {
   'use strict';
 
-  angular.module('inventory') //retreiving a module
-  .controller('InventoryController', InventoryController);
+  angular.module('inventory') //retreiving the inventory module
+  .controller('InventoryController', InventoryController); //creating the inventory controller
 
   InventoryController.$inject = ['InventoryService'];
 

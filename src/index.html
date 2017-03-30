@@ -10,11 +10,11 @@
   <meta name='author' content='Jennifer Oakes'>
 </head>
 <body>
-  <header>
+  <header ng-controller='LoginController as loginCtrl'>
     <h1>Shopular Inventory</h1>
-    <form name='loginform'>
+    <form name='loginform' ng-submit=' ...?? '>
       <input type='text' placeholder='Username'>
-      <button class='btn'>Login</button>
+      <input class='btn' type='submit' value='Login'>
     </form>
     <p>{{}}</p>
     <button class='btn'>Logout</button>
@@ -28,7 +28,6 @@
       <p ng-show='additem.name.$touched && !additem.name.$valid'>Please enter an item name.</p>
       <p ng-show='additem.price.$touched && !additem.price.$valid'>Please enter an item price.</p>
       <p ng-show='additem.quantity.$touched && !additem.quantity.$valid'>Please enter an item quantity.</p>
-      <p ng-show='additem.color.$touched && !additem.color.$valid'>Please enter an item color.</p>
       <p ng-show='additem.discount.$touched && !additem.discount.$valid'>Please enter an item discount.</p>
 
       <input
@@ -54,7 +53,6 @@
       <input
         type='text'
         placeholder='Color'
-        required
         name='color'
         ng-model='inventoryCtrl.newItem.color'>
       <input
@@ -102,6 +100,8 @@
   <script src='/js/inventory.module.js'></script>
   <script src='/js/inventory.controller.js'></script>
   <script src='/js/inventory.service.js'></script>
+  <!-- <script src='/js/login.controller.js'></script>
+  <script src='/js/login.service.js'></script> -->
 
 </body>
 </html>
