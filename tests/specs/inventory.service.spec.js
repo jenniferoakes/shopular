@@ -17,7 +17,9 @@
         expect(result).to.be.an('array');
     });
 
-    
+    it('should be able to add a new item to the inventory', function() {
+      expect(InventoryService.getAllItems().length).to.equal(0);
+    });
 
 
 
