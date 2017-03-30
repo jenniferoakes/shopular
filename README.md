@@ -42,7 +42,7 @@ The fourth round of tasks is designed to help with practicing testing Angular an
 - [X] When the page is loaded and the Controller is created, get the data from the Service and put it on the scope.
 - [X] Whenever an item is added, save the data using this new Service.
 
-##Fourth Round of Tasks
+## Fourth Round of Tasks
 - [ ] Set up testing using our Grunt build with Karma and Mocha.
 - [ ] Add grunt-bable task (Babel transpiles code to ES5).
 - [ ] Create a build directory with a copy task for html file, a clean task, jshint, test with karma, and sass.
