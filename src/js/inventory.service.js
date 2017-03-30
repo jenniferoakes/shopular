@@ -1,7 +1,7 @@
 (function() {
   'use strict';
 
-  angular.module('inventory') //retreiving the inventory module
+  angular.module('shop') //retreiving the inventory module
   .factory('InventoryService', InventoryService); //creating a factory
 
   function InventoryService() { //constructor function
@@ -27,11 +27,11 @@
         return;
       }
 
-      if(typeof(item.discount) !== 'number' || item.discount >= 0) {
+      if(typeof(item.discount) !== 'number' || item.discount < 0) {
         return;
       }
 
-      if(typeof(item.quantity) !== 'number' || item.quantity >= 0) {
+      if(typeof(item.quantity) !== 'number' || item.quantity < 0) {
         return;
       }
 

@@ -1,16 +1,16 @@
 (function() {
   'use strict';
 
-  angular.module('inventory').controller('LoginController', LoginController);
+  angular.module('shop').controller('LoginController', LoginController);
 
-  LoginController.$inject = ['LoginInService'];
+  LoginController.$inject = ['LoginService'];
 
   /**
    * Takes in username
    * @param {string} string   name of the shopular application username
    * @return {Object}         the username and time they logged into the application
    */
-  function LoginController(LoginInService) {
+  function LoginController(LoginService) {
     let vm = this;
     vm.user = {};
     vm.loggedInStatus = false;
@@ -18,7 +18,7 @@
       if (typeof(user) !== 'object' || !user) {
         return;
       }
-      return LoginInService.login(user);
+      return LoginService.login(user);
     };
   }
 

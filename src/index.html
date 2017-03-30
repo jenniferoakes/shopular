@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang='en' ng-app='inventory'>
+<html lang='en' ng-app='shop'>
 <head>
   <meta charset="utf-8">
   <title>Shopular</title>
@@ -11,8 +11,8 @@
 </head>
 <body>
   <header ng-controller='LoginController as loginCtrl'>
-    <h1>Shopular Inventory</h1>
-    <form name='loginform' ng-submit=' ...?? '>
+    <h1>Shopular</h1>
+    <form name='loginform' ng-submit=' '>
       <input type='text' placeholder='Username'>
       <input class='btn' type='submit' value='Login'>
     </form>
@@ -22,7 +22,7 @@
 
   <main ng-controller='InventoryController as inventoryCtrl'>
     <form name='additem'
-          ng-submit='additem.$valid && inventoryCtrl.addItem(inventoryCtrl.newItem)'
+          ng-submit='additem.$valid && inventoryCtrl.addItem(inventoryCtrl.newItem) && additem.$setUntouched()'
           novalidate>
 
       <p ng-show='additem.name.$touched && !additem.name.$valid'>Please enter an item name.</p>
@@ -97,11 +97,11 @@
   </footer>
 
   <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js'></script>
-  <script src='/js/inventory.module.js'></script>
+  <script src='/js/shop.module.js'></script>
   <script src='/js/inventory.controller.js'></script>
   <script src='/js/inventory.service.js'></script>
-  <!-- <script src='/js/login.controller.js'></script>
-  <script src='/js/login.service.js'></script> -->
+  <script src='/js/login.controller.js'></script>
+  <script src='/js/login.service.js'></script>
 
 </body>
 </html>

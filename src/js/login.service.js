@@ -1,7 +1,7 @@
 (function() {
   'use strict';
 
-  angular.module('inventory').factory('LoginService', LoginService);
+  angular.module('shop').factory('LoginService', LoginService);
 
   /**
    * Login service constructor
