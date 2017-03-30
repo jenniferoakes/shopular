@@ -19,6 +19,22 @@
 
     it('should be able to add a new item to the inventory', function() {
       expect(InventoryService.getAllItems().length).to.equal(0);
+      let now = Date.now();
+      InventoryService.addItemToInventory({
+        id: now,
+        name: 'Mugs',
+        price: 7.99,
+        quantity: 500,
+        color: 'Blue',
+        discount: 0.99
+      });
+      let items = InventoryService.getAllItems();
+      expect(items.length).to.equal(1);
+      expect(items[0].name).to.equal('Mugs');
+      expect(items[0].color).to.equal('Blue');
+      expect(items[0].price).to.equal(7.99);
+      expect(items[0].quantity).to.equal(500);
+      expect(items[0].discount).to.equal(0.99);
     });
 
 
