@@ -4,7 +4,9 @@ This repo is designed for practice using Angular 1 by building a little shop. Th
 
 The second round of tasks is designed to practice two-way data binding. This assignment will focus on laying a basic understanding of how to bind form inputs to data on a controller's scope and then see any changes in the view. This assignment will also aid in the practice of using directives to initiate actions, and validate form data.
 
-The second round of tasks is designed to practice combining a lot of different peices to build full applications. This assignment will help with practicing creating a Service, a second Controller, and organizing all of the code into a proper application. This assignment will aid with practice of organizing code into separate files and use a Service from within a Controller.
+The third round of tasks is designed to practice combining a lot of different pieces to build full applications. This assignment will help with practicing creating a Service, a second Controller, and organizing all of the code into a proper application. This assignment will aid with practice of organizing code into separate files and use a Service from within a Controller.
+
+The fourth round of tasks is designed to help with practicing testing Angular and seeing code coverage results. The goal is to set up testing of Angular applications and write tests for controllers and services.
 
 ## First Round of Tasks
 - [X] Create an interface to edit the inventory.
@@ -40,11 +42,26 @@ The second round of tasks is designed to practice combining a lot of different p
 - [X] When the page is loaded and the Controller is created, get the data from the Service and put it on the scope.
 - [X] Whenever an item is added, save the data using this new Service.
 
+##Fourth Round of Tasks
+- [ ] Set up testing using our Grunt build with Karma and Mocha.
+- [ ] Add grunt-bable task (Babel transpiles code to ES5).
+- [ ] Create a build directory with a copy task for html file, a clean task, jshint, test with karma, and sass.
+- [ ] Write tests for all controllers and services with a separate spec file for each.
+- [ ] You need must have code coverage being reported in the grunt build.
+- [ ] You do NOT have to have 100% coverage, you must have at least 50% coverage of all branches.
+- [ ] Get 100% code coverage.
+
 ## Terminal Command Review:
 ```sh
   sass sass/main.scss style.css
 
   sass --watch sass/main.scss:style.css
+
+  npm init
+  npm install --save-dev grunt karma mocha chai karma-mocha karma-chai grunt-karma karma-chrome-launcher
+  npm i --save angular
+  npm i --save-dev angular-mocks
+
 ```
 
 By: [Jennifer Oakes](https://www.linkedin.com/in/jennifernicoleoakes/)
