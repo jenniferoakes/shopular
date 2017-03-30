@@ -64,6 +64,10 @@ The fourth round of tasks is designed to help with practicing testing Angular an
 
 ```
 
+## Notes for npm install
+- Test: "grunt karma"
+- Main: "build/js/inventory.module.js"
+
 By: [Jennifer Oakes](https://www.linkedin.com/in/jennifernicoleoakes/)
 
 March 2017
