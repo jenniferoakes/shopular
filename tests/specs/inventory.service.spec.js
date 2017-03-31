@@ -35,10 +35,8 @@
       expect(items[0].price).to.equal(7.99);
       expect(items[0].quantity).to.equal(500);
       expect(items[0].discount).to.equal(0.99);
+      expect(items[0].id).to.equal(now);
     });
-
-
-
 
   });
 

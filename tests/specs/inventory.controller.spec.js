@@ -15,6 +15,4 @@
       //the value of the real inventory service is dead, so instead use this fake one
     }));
   });
-
-
 }());
