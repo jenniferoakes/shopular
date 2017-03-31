@@ -50,6 +50,7 @@ The fourth round of tasks is designed to help with practicing testing Angular an
 - [ ] You need must have code coverage being reported in the grunt build.
 - [ ] You do NOT have to have 100% coverage, you must have at least 50% coverage of all branches.
 - [ ] Get 100% code coverage.
+- [ ] Install babel.
 
 ## Terminal Command Review:
 ```sh
@@ -61,6 +62,10 @@ The fourth round of tasks is designed to help with practicing testing Angular an
   npm install --save-dev grunt karma mocha chai karma-mocha karma-chai grunt-karma karma-chrome-launcher
   npm i --save angular
   npm i --save-dev angular-mocks
+
+  npm install --save-dev grunt-babel babel-preset-es2015
+  npm i --save-dev grunt-contrib-concat
+  npm install --save-dev karma-coverage
 
 ```
 
