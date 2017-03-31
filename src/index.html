@@ -12,11 +12,11 @@
 <body>
   <header ng-controller='LoginController as loginCtrl' class='page-header'>
     <h1>Shopular</h1>
-    <form name='loginform' class='form-group form-inline' ng-submit='loginform.$valid && loginCtrl.login(loginCtrl.user)'>
-      <input type='text' class='form-control' placeholder='Username' ng-model='loginCtrl.user.username' ng-show='!loginCtrl.loggedInStatus'>
-      <input class='btn' type='submit' value='Login' ng-show='!loginCtrl.loggedInStatus'>
-      <input class='btn' type='submit' value='Logout' ng-show='loginCtrl.loggedInStatus'>
+    <form name='loginform' class='form-group form-inline' ng-submit='loginform.$valid && loginCtrl.login(loginCtrl.user)' ng-show='!loginCtrl.loggedInStatus'>
+      <input type='text' class='form-control' placeholder='Username' ng-model='loginCtrl.user.username'>
+      <input class='btn' type='submit' value='Login'>
     </form>
+    <button class='btn' ng-show='loginCtrl.loggedInStatus' ng-click='loginCtrl.loggedInStatus = false'>Logout</button>
     <p ng-show='loginCtrl.loggedInStatus'>{{loginCtrl.loggedIn.username}} logged in on {{loginCtrl.loggedIn.time | date:'short' }}</p>
   </header>
 
