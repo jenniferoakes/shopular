@@ -4,6 +4,8 @@
   angular.module('shop') //retreiving the inventory module
   .controller('InventoryController', InventoryController); //creating the inventory controllers
 
+  let tax = 0.0575;
+
   InventoryController.$inject = ['InventoryService'];
 
   function InventoryController(InventoryService) {
@@ -16,12 +18,12 @@
 
     /**
     * Calculates price of inventory item, taking into consideration discount and tax
-    * @param {Object} item     One item in the inventory
-    * @return {Number}         final price of inventory item
+    * @param {Array} item     One item in the inventory
+    * @return {Object}         final price of inventory item
     */
     vm.getNewPrice = function getNewPrice(item) {
       let discountedPrice = item.price - item.discount;
-      let finalPrice = discountedPrice * 1.0575;
+      let finalPrice = discountedPrice * (tax + 1);
       return finalPrice;
     };
 
@@ -34,7 +36,7 @@
       InventoryService.addItemToInventory(item);
       vm.newItem = {};
       return true;
-      //set this to true so that in the form, when we add a new item on submit, the $setUntouched() is able to run 
+      //set this to true so that in the form, when we add a new item on submit, the $setUntouched() is able to run
     };
 
     vm.changeSort = function changeSort(sortField) {
