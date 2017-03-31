@@ -63,7 +63,7 @@
     }
 
     return {
-      addItemToInventory:addItemToInventory,
+      addItemToInventory: addItemToInventory,
       getAllItems: getAllItems
     };
   }
