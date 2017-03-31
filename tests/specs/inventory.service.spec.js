@@ -40,7 +40,7 @@
       expect(items[0].discount).to.equal(0.99);
     });
 
-    it('should handle if the price is less than 0', function() {
+    it('should not add an item to the inventory if the price is less than 0.01', function() {
       expect(InventoryService.getAllItems().length).to.equal(0);
       let now = Date.now();
       InventoryService.addItemToInventory({
@@ -54,6 +54,8 @@
       let items = InventoryService.getAllItems();
       expect(items.length).to.equal(0);
     });
+
+    
 
   });
 
