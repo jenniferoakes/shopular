@@ -64,7 +64,7 @@ The fourth round of tasks is designed to help with practicing testing Angular an
   npm i --save-dev angular-mocks
 
   npm install --save-dev grunt-babel babel-preset-es2015
-  npm i --save-dev grunt-contrib-concat
+  npm install --save-dev grunt-contrib-concat
   npm install --save-dev karma-coverage
 
 ```
