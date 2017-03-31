@@ -6,19 +6,29 @@
   LoginController.$inject = ['LoginService'];
 
   /**
-   * Takes in username
-   * @param {string} string   name of the shopular application username
-   * @return {Object}         the username and time they logged into the application
+   * [LoginController description]
+   * @param {[type]} LoginService [description]
    */
   function LoginController(LoginService) {
     let vm = this;
     vm.user = {};
     vm.loggedInStatus = false;
-    vm.login= function login(user) {
+
+    /**
+     * [login description]
+     * @param  {[type]} user [description]
+     * @return {[type]}      [description]
+     */
+    vm.login = function login(user) {
+      console.log('calling login on controller with', user);
       if (typeof(user) !== 'object' || !user) {
         return;
       }
-      return LoginService.login(user);
+      if (typeof(user.username) !== 'string' || !user.username || user.username === '') {
+        return;
+      }
+      vm.loggedIn = LoginService.login(user.username);
+      vm.loggedInStatus = true;
     };
   }
 

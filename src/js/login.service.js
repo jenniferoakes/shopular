@@ -11,12 +11,18 @@
       login:login
     };
 
+    /**
+     * [login description]
+     * @param  {String} username
+     * @return {Object}          gives back username and time
+     */
     function login(username) {
+      
       let loginInformation= {
         username: username,
         time: new Date()
       };
-      return LoginInformation;
+      return loginInformation;
     }
   }
 
