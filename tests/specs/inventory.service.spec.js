@@ -55,7 +55,35 @@
       expect(items.length).to.equal(0);
     });
 
-    
+    it('should not add an item to the inventory if the quantity is less than 0', function() {
+      expect(InventoryService.getAllItems().length).to.equal(0);
+      let now = Date.now();
+      InventoryService.addItemToInventory({
+        id: now,
+        name: 'Mugs',
+        price: 2,
+        quantity: -1,
+        color: 'Blue',
+        discount: 0.99
+      });
+      let items = InventoryService.getAllItems();
+      expect(items.length).to.equal(0);
+    });
+
+    it('should not add an item to the inventory if the discount is less than 0', function() {
+      expect(InventoryService.getAllItems().length).to.equal(0);
+      let now = Date.now();
+      InventoryService.addItemToInventory({
+        id: now,
+        name: 'Mugs',
+        price: 2,
+        quantity: 10,
+        color: 'Blue',
+        discount: -2
+      });
+      let items = InventoryService.getAllItems();
+      expect(items.length).to.equal(0);
+    });
 
   });
 
