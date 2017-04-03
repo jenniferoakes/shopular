@@ -43,14 +43,14 @@ The fourth round of tasks is designed to help with practicing testing Angular an
 - [X] Whenever an item is added, save the data using this new Service.
 
 ## Fourth Round of Tasks
-- [ ] Set up testing using our Grunt build with Karma and Mocha.
-- [ ] Add grunt-bable task (Babel transpiles code to ES5).
+- [X] Set up testing using our Grunt build with Karma and Mocha.
+- [X] Add grunt-bable task (Babel transpiles code to ES5).
 - [ ] Create a build directory with a copy task for html file, a clean task, jshint, test with karma, and sass.
 - [ ] Write tests for all controllers and services with a separate spec file for each.
 - [ ] You need must have code coverage being reported in the grunt build.
 - [ ] You do NOT have to have 100% coverage, you must have at least 50% coverage of all branches.
 - [ ] Get 100% code coverage.
-- [ ] Install babel.
+- [X] Install babel.
 
 ## Terminal Command Review:
 ```sh

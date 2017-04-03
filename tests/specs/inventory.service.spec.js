@@ -92,6 +92,22 @@
       expect(items.length).to.equal(0);
     });
 
+    it('should add null as the value for the color property if a number is entered', function() {
+      expect(InventoryService.getAllItems().length).to.equal(0);
+      InventoryService.addItemToInventory({
+        name: 'Mugs',
+        price: 2,
+        quantity: 100,
+        color: 289890,
+        discount: 0.50
+      });
+      console.info(InventoryService.getAllItems());
+      let items = InventoryService.getAllItems();
+      console.info(items[0]);
+      expect(items[0].color).to.be.null;
+    });
+
+
   });
 
 

@@ -35,6 +35,10 @@
         return;
       }
 
+      if(typeof(item.color) !== 'string') {
+        item.color = null;
+      }
+
       //color? must be a string...if not, do something, use 'null' item.color = null, if not a string, make it null
       //does that string match a previously defined color?
 

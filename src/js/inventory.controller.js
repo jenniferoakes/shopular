@@ -32,6 +32,7 @@
      * @return {boolean}
      */
     vm.addItem = function addItem(item) {
+      console.info('printing item',item);
       InventoryService.addItemToInventory(item);
       vm.newItem = {};
       return true;
